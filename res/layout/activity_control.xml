@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" android:fillViewport="false"
+            android:layout_marginLeft="@dimen/default_padding" android:layout_marginRight="@dimen/default_padding">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ON"
+                        android:id="@+id/btnOn" android:layout_weight="1"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/ALL_RANDOM"
+                        android:id="@+id/btnAllRandom"/>
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/OFF"
+                        android:id="@+id/btnOff" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="@string/RED"
+                            android:gravity="center_vertical"/>
+                    <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sbRed" android:max="255" android:layout_weight="1"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="0"
+                            android:id="@+id/tvRColor" android:gravity="center_vertical"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="@string/GREEN"
+                            android:gravity="center_vertical"/>
+                    <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sbGreen" android:layout_weight="1" android:max="255"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="0"
+                            android:id="@+id/tvGColor"
+                            android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="@string/BLUE"
+                            android:gravity="center_vertical"/>
+                    <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sbBlue" android:layout_weight="1" android:max="255"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="0"
+                            android:id="@+id/tvBColor" android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding">
+                    <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SHOW"
+                            android:id="@+id/swShow" android:textOff="@string/O" android:textOn="@string/I"
+                            android:switchMinWidth="@dimen/switch_width"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <SeekBar
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sbIndex" android:layout_weight="1"
+                                />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="0"
+                                android:id="@+id/tvIndex" android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/FILL"
+                            android:id="@+id/cbFill"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/REVERTED"
+                            android:id="@+id/cbReverted"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_padding">
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/CHASE" android:id="@+id/swChase"
+                        android:switchMinWidth="@dimen/switch_width" android:textOn="@string/I"
+                        android:textOff="@string/O"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_weight="1">
+                </LinearLayout>
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/CYCLED" android:id="@+id/swCycled"
+                        android:gravity="center|left" android:layout_gravity="left"
+                        android:switchMinWidth="@dimen/switch_width" android:textOff="@string/O"
+                        android:textOn="@string/I"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding">
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/RANDOM"
+                        android:id="@+id/swRandom" android:switchMinWidth="@dimen/switch_width" android:textOn="@string/I"
+                        android:textOff="@string/O"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_weight="1">
+                </LinearLayout>
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/DYNAMIC"
+                        android:id="@+id/swDynamic" android:checked="false"
+                        android:textOff="@string/O"
+                        android:textOn="@string/I" android:switchMinWidth="@dimen/switch_width"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_padding"
+                          android:id="@+id/linearLayout2">
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/RAINBOW" android:id="@+id/swRainbow"
+                        android:switchMinWidth="@dimen/switch_width" android:textOff="@string/O"
+                        android:textOn="@string/I"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                              android:layout_height="fill_parent" android:layout_weight="1"
+                              android:id="@+id/linearLayout1"/>
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/DYNAMIC" android:id="@+id/swRainbowDynamic"
+                        android:switchMinWidth="@dimen/switch_width" android:textOff="@string/O"
+                        android:textOn="@string/I" android:checked="false"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_padding">
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/LISTEN"
+                        android:id="@+id/swListen" android:switchMinWidth="@dimen/switch_width"
+                        android:textOff="@string/O" android:textOn="@string/I"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                              android:layout_height="fill_parent" android:layout_weight="1"
+                              android:id="@+id/linearLayout"/>
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/LISTEN2" android:id="@+id/swListen2"
+                        android:switchMinWidth="@dimen/switch_width" android:textOff="@string/O"
+                        android:textOn="@string/I"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

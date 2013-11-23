@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RPi LEDs Control</string>
+    <string name="SETTINGS">Settings</string>
+    <string name="CHASE">Chase</string>
+    <string name="CYCLED">Cycled</string>
+    <string name="RED">R:</string>
+    <string name="GREEN">G:</string>
+    <string name="BLUE">B:</string>
+    <string name="LOCKED">Locked</string>
+    <string name="ON">All on</string>
+    <string name="OFF">All off</string>
+    <string name="ALL_RANDOM">All random</string>
+    <string name="RANDOM">Random</string>
+    <string name="DYNAMIC">Dynamic</string>
+    <string name="SINGLE">Single</string>
+    <string name="FILL">Fill</string>
+    <string name="REVERTED">Reverted</string>
+    <string name="COLOR_CHOOSER">Color chooser</string>
+    <string name="CONNECT">Connect</string>
+    <string name="DISCONNECT">Disconnect</string>
+    <string name="DISCONNECTED">Disconnected</string>
+    <string name="SERVER_NAME">Server name/address</string>
+    <string name="PORT">Port</string>
+    <string name="PASSWORD">Password</string>
+    <string name="START_LISTENING">Stop Listening</string>
+    <string name="STOP_LISTENING">Stop Listening</string>
+    <string name="SERVER_VERSION">Server version</string>
+    <string name="INCORRECT_SERVER">Incorrect server name</string>
+    <string name="INCORRECT_COMMAND">Incorrect command</string>
+    <string name="INCORRECT_PASSWORD">Incorrect server password</string>
+    <string name="DISCONNECTED_FROM_HOST">Disconnected from host</string>
+    <string name="UNABLE_TO_CONNECT">Unable to connect</string>
+
+    <string name="SERVER_DOWN">Server down</string>
+
+    <string name="LISTEN">Listen</string>
+    <string name="LISTEN2">Listen2</string>
+    <string name="SHOW">Show</string>
+
+    <string name="STARS">Stars</string>
+    <string name="RAINBOW">Rainbow</string>
+
+    <string name="SAVE">Save</string>
+
+    <string name="O">0</string>
+    <string name="I">I</string>
+
+</resources>

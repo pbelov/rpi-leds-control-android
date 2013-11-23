@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RGBLineActivity" android:padding="@dimen/default_margin">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SERVER_NAME"
+            android:id="@+id/tvName" android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp" android:layout_alignRight="@+id/etAddr"
+            android:layout_alignLeft="@+id/etAddr" android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/etAddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10" android:layout_marginTop="@dimen/default_margin"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_below="@+id/etAddr" android:id="@+id/linearLayout"
+            android:layout_marginTop="@dimen/default_margin">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PORT"
+                    android:id="@+id/textView" android:gravity="center_horizontal"/>
+            <EditText
+                android:id="@+id/etPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" android:layout_weight="1" android:singleLine="true"
+                android:numeric="integer|signed|decimal">
+            </EditText>
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SAVE"
+                    android:id="@+id/cbSavePort"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PASSWORD"
+                    android:id="@+id/textView1" android:gravity="center_horizontal"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/etPasswd"
+                    android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/etPort" android:layout_weight="1" android:password="true"/>
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SAVE"
+                    android:id="@+id/cbSavePass"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CONNECT" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/default_margin" android:layout_alignRight="@+id/etAddr"
+        android:layout_alignLeft="@+id/tvName"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SAVE"
+            android:id="@+id/cbSaveName" android:layout_alignLeft="@+id/tvName" android:layout_below="@+id/etAddr"/>
+
+</RelativeLayout>
